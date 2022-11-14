@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Work+Sans:wght@300;400&display=swap');
+/* reset*/
+*{
+    margin:0 ;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+/* Main style */
+html,body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color:#747474;
+    height: 1000px;
+    padding: 70px 0 0 0;}
+h1,h2,h3,h4,h5,h6{
+margin: 1em 0;
+font-family: 'Work Sans',Arial,sans-serif;
+font-weight: 300;
+letter-spacing: -.3px;}
+
+p{
+    text-align: justify;
+
+}
+.logo-docplanner {
+    cursor: pointer;
+    width: 268px;
+    height: 33px;
+}
+/* section header*/
+.main-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    background: hsla(0,0%,100%,.98);
+    transition: box-shadow .25s ease 0s; 
+}
+.main-header.is-sticky {
+    box-shadow: 0 -2px 10px 0 rgb(0 0 0 / 15%);}
+.inner-header{
+     background-color: #fff;
+     max-width: 1015px;
+     padding: 0 20px;
+      margin: 0 auto;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;}
+  .main-header h1 {
+    position: relative;
+    margin :2px 0 0;
+    line-height: 68px;}
+.main-nav{
+    position: relative;
+    float: right;}
+.nav-link{
+    list-style: none;
+    font-size: .9375rem;
+    font-weight: 400;
+    line-height: 2em;
+    padding: 1.33em 0;}
+.nav-link a {
+    color: #ababab;
+    display: block;
+    text-decoration: none;
+    padding: 0 0.6em;
+    background-color: transparent;}
+ul{
+    display: block;}
+ul li{
+    display: inline-block;}
+ul li a {
+    display: block;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 13px;
+    font-weight: 700;}
+ul li a.about{
+    color:#00b39b;}
+    /*dropdown list*/
+ul li a.grey:hover{
+    color:#00b39b;}
+.dropdown{
+    position: relative;
+    display: inline-block;}
+.dropdown-content {
+    display: none;
+    padding-top: 10px;
+    position: absolute;
+    min-width: 220px;
+    margin-left: -100px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px 0 #d3cfc9;
+    z-index: 1;}
+.dropdown-content a {
+    color:#ababab;
+    line-height: 120%;
+    padding: 12px 16px!important;
+    text-decoration: none;
+    display: block;
+    width:100%; 
+    font-size: 1rem;}
+.dropdown-content a:hover {background-color: #f6f8f8;
+color :#00b39b; }
+.dropdown:hover .dropdown-content {display: block;}
+.img-logo{
+    display: block;
+    margin: 0 auto;}
+.main-inner h1 {
+    text-align: center;
+    font-size: 2.125rem;
+    color: #00b39b;
+    font-weight: 300;
+    letter-spacing: -.3px;
+    font-family: 'Work Sans', sans-serif;
+    margin: 1em 0;}
+
+ /*section 2*/
+.grid-container{
+    height: 185.594px;
+    display: grid;
+    margin: 0 15px;
+    grid-template-columns: repeat(2,0.1fr);
+    padding: 10px;
+    gap: 2rm;
+    gap: 21px;
+    justify-content: center;
+    margin: 33 0 60 0;
+}
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: start;
+    padding: 20px 0;
+    }
+  .grid-container p {
+    height: 140px;
+    margin: 13px 0;
+    width: 397px;
+    line-height: 1.75;
+    font-weight: 400;
+    color:#747474;}
+    /* services*/
+.section-inner{
+    height: 365px;
+    max-width: 1015px;
+    padding: 0 20px;
+    margin: 0 auto;
+    position: relative;}
+  .services{
+    margin: 60px 167px 40px 167px ;}
+.services-grid{
+    height: 365px;
+     margin: 0 -10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;}
+.services-grid>.services-grid-elements{
+    height: 345px;
+    padding: 10px;
+    border-radius: 10px;
+    transform: translate(0);}
+#grid-1{
+    background-color: #00ccb1;}
+#grid-2{
+    background-color: #3D83Df;}
+#grid-3{
+    background-color:#1B2734;}
+  .services-item{
+    border-radius: 10px;
+    padding: 2em 2em 0;
+    height: 345px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color:white;}
+.image{
+        width: 24px;
+        height: 24px;
+        margin: 0 0 -6px 0;}
+.services__item h1 {
+    font-size: 1.625em;
+    font-weight: 400;
+    color: #fff;
+    margin: 0.3em 0;}
+.services-item h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0;
+    color: #fff;}
+
+.country-select select{
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    padding: 0 2em 0 0;
+    outline: 0;
+    text-transform: none;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 400;
+    color:#fff;
+    font-size: 19px;}
+.country-select ::after{
+        content: "";
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        margin-top: -0.5em;
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        margin-right: 0.2em;
+        line-height: 1em;
+        pointer-events: none;}
+.country-select select option {
+    font-size: 1rem;
+    line-height: 1.2;
+    color: #333;
+}
+
+/* brands section-inner*/
+.brands{ 
+    margin:2.5rem auto 3.125rem}
+.brands h1 {
+        float: left;
+        width: 33%;
+        font-size: 1.625em;
+        margin: 0.25em 0 0.35em;
+        padding-right: 1em;
+        color: #00b39b;}
+.brands-logo a svg {
+            height: 20px;
+            width: auto;
+            max-width: 100%;
+            padding-left: 10px;
+        color:#3d83df;}
+.brands__logo {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: 0;
+        list-style: none;
+        width: 67%;}
+.brands__logo li {
+            font-size: 1rem;
+            display: inline-block;
+            margin-top: 0;
+            padding: 5px 0 5px 5px;
+            width: auto;
+        color:#3d83df;}
+.brands__logo a {
+display: inline-block;
+padding: 5px 0;}
+.brands-logo a img {
+    max-width: 100%;
+    filter: grayscale(1);
+}
+
+.brands-logo a img:hover {
+    filter: grayscale(0);
+
+}
+
+.brands__logo .tuotempo img {
+    height: 18px;}
+.brands__logo  img {
+     height: 25px;
+     
+    }
+
+     .logo-section{
+        opacity: 0.25;
+     }
+     .logo-section:hover{
+        opacity: 1;
+        fill: #00ccb1;
+     }
+
+     
+            
